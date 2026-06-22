@@ -24,4 +24,4 @@ Tabla Registro de errores (QA)
 **N°          |    Error Encontrado    |    Pasos para reproducirlo    |    ¿Qué deberia haber ocurrido?    |  Solución aplicada**
 
 **Infraestructura y DevOps:**
-<img width="866" height="136" alt="image" src="https://github.com/user-attachments/assets/d32491f9-8f30-40f2-8a16-4662f0fdd1ef" />
+<img width="873" height="114" alt="image" src="https://github.com/user-attachments/assets/05969ba2-5971-45f0-b3aa-c6541c463b5d" />
