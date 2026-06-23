@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PlanAR</title>
 <style>
  
@@ -78,7 +80,6 @@
  
 </style>
 </head>
-
 <body>
  
   <h1>PlanAR</h1>
@@ -112,10 +113,60 @@
     <button onclick="volverInicio()">Volver al inicio</button>
   </div>
  
-  <div id="categorias">
-    <p>Categorías: Música, Arte, Ferias, Teatro, Gastronomía, Talleres</p>
-  </div>
+  <p id="mensajeReserva"></p>
+ 
+  <div id="categorias"></div>
+ 
+  
+<script>
 
+function reservar(){
+  const mensaje = document.getElementById('mensajeReserva');
+  mensaje.textContent = "Reserva realizada correctamente";
+}
+
+
+
+const categorias = ["Conciertos", "Ferias", "Deportes"];
+
+function mostrarCategorias(){
+
+  const cont = document.getElementById('categorias');
+
+  // Si ya están visibles, las oculta
+  if(cont.style.display === "block"){
+    cont.style.display = "none";
+    cont.innerHTML = "";
+    return;
+  }
+
+  let lista = "<p><strong>Categorías:</strong></p><ul>";
+
+  categorias.forEach(function(categoria){
+    lista += "<li>" + categoria + "</li>";
+  });
+
+  lista += "</ul>";
+
+  cont.innerHTML = lista;
+
+  cont.style.display = "block";
+}
+
+
+function volverInicio(){
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
+  document.getElementById('categorias').innerHTML = "";
+  document.getElementById('categorias').style.display = "none";
+
+  document.getElementById('mensajeReserva').textContent = "";
+}
+</script>
  
 </body>
 </html>
