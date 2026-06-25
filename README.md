@@ -22,6 +22,7 @@ eventos.html: Título principal.
               Efecto hover sobre las tarjetas.    
               
 **Tabla Registro de errores (QA)**
+
 <img width="705" height="288" alt="image" src="https://github.com/user-attachments/assets/ac026f04-f24b-47e9-bd19-754c4a9fb183" />
 
 Error encontrado: El botón "Reservar lugar" se puede presionar múltiples veces.
